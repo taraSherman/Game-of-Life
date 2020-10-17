@@ -1,4 +1,24 @@
 '''
+OBJECTIVES:
+    
+    Student should be able to create a unique, high-quality project that can be added to a professional portfolio
+    
+    Student should be able to describe the rules of Conway’s “Game of Life”
+        1. Live cell that has less than 2 live neighbors will die
+        2. Live cell with 2 or 3 live neighbors continues to live
+        3. Live cell with 3 or more live neighbors will die
+        4. Dead cell with exactly 3 live neighbors will come to life
+        
+    Student should be able to explain what cellular automata are and describe how they are useful in real life
+        A cellular automaton is a model of a system consisting of a collection of cells on a grid of specified shape and size that evolve through a number of discrete time steps, changing states according to a set of rules based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired.
+    
+    Student should be able to correctly analyze the ‘Turing Completeness’ of Conway’s “Game of Life”
+        If a system (language, model) is theoretically capable of solving any computational problem, given infinite space and time, then  it is said to be Turing-complete. Theoretically, the Game of Life is as powerful as any computer with unlimited memory and no time constraints, i.e. a universal Turing machine; anything that can be computed algorithmically can be computed within the Game of life.
+    
+    Student should be able to implement a visualization of Conway’s “Game of Life” using technologies related to their specific track.
+    
+    Student should be able to utilize "double buffering" to implement the game
+
 Three components:
     A property defined in a 1- or 2-dimensional space
     A mathematical rule to change this property for each step (generation) in the simulation
@@ -72,4 +92,23 @@ Implementing the rules:
         else:
             if total neighbors is exactly 3:
                 current cell comes to life
+
+
+Installation and Run possibilities:
+    install with pip (if pushed to pypi):
+        pip install mygameoflife
+    
+    install from source:
+        python setup.py
+    
+    run via launch script installed with pip package:
+        mygameoflife
+    
+    run as a python module:
+        python -m mygameoflife
+    
+    import the class into your own code:
+        from mygameoflife import MyGame
+
+    
 '''
