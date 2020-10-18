@@ -1,7 +1,7 @@
 import pygame
 import sys
 from settings import *
-
+from game_window_class import *
 
 class Game:
     def __init__(self):
@@ -9,6 +9,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.screen = pygame.display.set_mode((SCREEN_W, SCREEN_H))
         self.running = True
+        self.game_window = Game_window(self.screen, 100, 250)
 
     def run(self):
         while self.running:
@@ -27,8 +28,9 @@ class Game:
                 self.running = False
 
     def update(self):
-        pass
+        self.game_window.update()
 
     def draw(self):
         self.screen.fill(BG_COLOR)
+        self.game_window.draw()
         pygame.display.update()
