@@ -1,0 +1,5 @@
+FPS = 60
+SCREEN_W = 1200
+SCREEN_H = 600
+
+BG_COLOR = (54, 69, 79)
