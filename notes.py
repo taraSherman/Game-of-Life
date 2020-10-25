@@ -33,6 +33,7 @@ The Four Rules:
     3. Live cell with 3 or more live neighbors will die
     4. Dead cell with exactly 3 live neighbors will come to life
     
+****************************************************************************************
     Toroidal boundary conditions (wraps vertically and horizontally)
     Algorithm to apply the four rules and run the simulation:
     1. Initialize the cells in the grid
