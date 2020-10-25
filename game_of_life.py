@@ -102,7 +102,6 @@ def click_cell(pos):
         game_window.grid[grid_pos[1]][grid_pos[0]].alive = True
 
 # Buttons to Run, Pause, Resume, or Reset
-# Known issue: Run does not work properly after Reset
 def make_buttons():
     buttons = []
     buttons.append(Button(window, WIDTH//2-50, 50, 100, 20, text='Run', color=RUN_BUTTON, hover_color=RUN_HOVER, bold_text=True, function=run_game, state='setting'))
